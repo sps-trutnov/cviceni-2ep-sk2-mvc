@@ -8,9 +8,11 @@ namespace _01_HelloWorld.Controllers
 {
     public class HelloWorldController : Controller
     {
-        public IActionResult Index()
+        // vyvola se v prohlizeci pomoci URL https://localhost:<port>/HelloWorld
+        // nebo take kompletne s nazvem akce https://localhost:<port>/HelloWorld/Index
+        public string Index()
         {
-            return View();
+            return "Toto je defaultní akce controlleru HelloWorld.";
         }
     }
 }
