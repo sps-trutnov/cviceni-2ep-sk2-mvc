@@ -14,5 +14,11 @@ namespace _01_HelloWorld.Controllers
         {
             return "Toto je defaultní akce controlleru HelloWorld.";
         }
+
+        // vyvola se v prohlizeci pomoci URL https://localhost:<port>/HelloWorld/Pozdrav
+        public string Pozdrav()
+        {
+            return "Ahoj, světe!";
+        }
     }
 }
