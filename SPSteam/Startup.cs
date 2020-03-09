@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace _01_HelloWorld
+namespace SPSteam
 {
     public class Startup
     {
@@ -50,7 +50,7 @@ namespace _01_HelloWorld
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=HelloWorld}/{action=Pozdrav}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

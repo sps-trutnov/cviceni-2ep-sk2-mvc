@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace _01_HelloWorld
+namespace SPSteam
 {
     public class Program
     {
@@ -16,13 +16,11 @@ namespace _01_HelloWorld
             CreateHostBuilder(args).Build().Run();
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args)
-        {
-            return Host
-                .CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(
-                    webBuilder => { webBuilder.UseStartup<Startup>(); }
-                );
-        }
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
     }
 }

@@ -1,6 +1,6 @@
 using System;
 
-namespace _01_HelloWorld.Models
+namespace SPSteam.Models
 {
     public class ErrorViewModel
     {
